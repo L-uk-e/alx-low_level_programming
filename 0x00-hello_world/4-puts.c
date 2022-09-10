@@ -1,7 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - Outputs text
+ * main - Entry point
+ *
+ * Description: Outputs text using the puts function
+ *
+ * Return: Will always return 0
  */
 int main(void)
 {
