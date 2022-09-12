@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char exact_text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19,";
+	char exact_text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	write(1, exact_text, 59);
 	return (1);
