@@ -10,8 +10,8 @@
 
 int main(void)
 {
-	char exact_text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char line[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(1, exact_text, 59);
+	write(1, line, 59);
 	return (1);
 }
