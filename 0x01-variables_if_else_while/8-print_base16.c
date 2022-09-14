@@ -9,19 +9,19 @@
  */
 int main(void)
 {
-	int n = 0;
+	int n = 48;
 	char c = 'a';
 
-	while (n <= 9)
+	while (n <= 57)
 	{
 		putchar(n);
 		n++;
 	}
 
-	while (n <= 'f')
+	while (c <= 'f')
 	{
-		putchar(n);
-		n++;
+		putchar(c);
+		c++;
 	}
 
 	putchar('\n');
