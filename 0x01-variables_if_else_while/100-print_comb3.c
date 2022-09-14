@@ -33,7 +33,7 @@ int main(void)
 			else
 			{
 				x++;
-				y=x+1;
+				y = x + 1;
 			}
 		}
 	}
