@@ -7,15 +7,16 @@
  */
 int main(void)
 {
-	char letter[10] = "_putchar";
+	char s[] = "_putchar";
 
-	int x = 0;
+	int x;
 
-	while ( x < 8 )
+	for (x = 0; x <= 8; x++)
 	{
-		_putchar(letter[x]);
-		x++;
+		_putchar(s[x]);
 	}
+
 	_putchar(10);
+
 	return (0);
 }
