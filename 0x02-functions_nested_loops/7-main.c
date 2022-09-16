@@ -1,7 +1,7 @@
 #include "main.h"
-#include "7-print_last_digit.c"
 #include "_putchar.c"
-#include "6-abs.c"
+#include "7-print_last_digit.c"
+
 
 /**
  * main - check the code
