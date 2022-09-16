@@ -16,8 +16,7 @@ void times_table(void)
 
 		_putchar(x * y + '0');
 		y++;
-		
-	
+
 		while (y < 10)
 		{
 			if ((x * y) < 10)
@@ -25,7 +24,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(x * y + '0');				
+				_putchar(x * y + '0');
 				y++;
 			}
 			else
@@ -33,13 +32,13 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 				_putchar((x * y) / 10 + '0');
-				_putchar((x * y) % 10 + '0');			       
+				_putchar((x * y) % 10 + '0');
 				y++;
 			}
-		}	
+		}
 
 		_putchar('\n');
 		x++;
-		
+
 	}
 }
