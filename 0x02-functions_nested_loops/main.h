@@ -1,5 +1,7 @@
 #include <unistd.h>
 
+void jack_bauer(void);
+
 int _putchar(char c);
 
 void print_alphabet(void);
@@ -15,3 +17,5 @@ int print_sign(int n);
 int _abs(int);
 
 int print_last_digit(int);
+
+
