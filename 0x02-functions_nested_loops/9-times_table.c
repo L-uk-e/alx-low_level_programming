@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 
 /**
  * times_table - Prints the 9 times-table
@@ -13,41 +14,30 @@ void times_table(void)
 	while (x < 10)
 	{
 		y = 0;
+
+		_putchar(x * y + '0');
+		y++;
+		
 	
-		while (y < 9)
+		while (y < 10)
 		{
 			if ((x * y) < 10)
 			{
-				
-				_putchar(x * y + '0');
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
+				_putchar(x * y + '0');				
 				y++;
 			}
 			else
 			{
-				_putchar((x * y) / 10 + '0');
-				_putchar((x * y) % 10 + '0');
 				_putchar(',');
 				_putchar(' ');
+				_putchar((x * y) / 10 + '0');
+				_putchar((x * y) % 10 + '0');			       
 				y++;
 			}
 		}	
-		while (y == 9)
-		{
-			if ((x * y) < 10)
-			{
-				_putchar(x * y + '0');
-				y++;
-			}
-			else
-			{
-				_putchar((x * y) / 10 + '0');
-				_putchar((x * y) % 10 + '0');
-				y++;
-			}
-		}
 
 		_putchar('\n');
 		x++;
