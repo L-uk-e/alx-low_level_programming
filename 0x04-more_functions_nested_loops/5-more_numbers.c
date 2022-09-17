@@ -15,7 +15,7 @@ void more_numbers(void)
 		int y = 0;
 		int w = x;
 
-		while (y < 14)
+		while (y < 15)
 		{
 			if (y > 9)
 			{
