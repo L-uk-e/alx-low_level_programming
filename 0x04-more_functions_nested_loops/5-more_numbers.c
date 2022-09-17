@@ -13,24 +13,23 @@ void more_numbers(void)
 	{
 		int x = 48;
 		int y = 0;
-		int w = x;
 
-		while (y < 14)
+		while (y < 15)
 		{
+			int w = x;
 			if (y > 9)
 			{
 				w = x - 10;
 				_putchar(49);
-				x++;
-				y++;
 			}
 
 			_putchar(w);
+			x++;
+			y++;
 
 		}
-
+		_putchar('\n');
 		i++;
 	}
 
-	_putchar('\n');
 }
