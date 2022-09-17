@@ -29,7 +29,7 @@ void more_numbers(void)
 
 		}
 
-		x = 48;
+		i++;
 	}
 
 	_putchar('\n');
