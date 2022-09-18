@@ -20,7 +20,13 @@ void print_square(int size)
 			y++;
 		}
 
-		_putchar('\n');
+		if (x != (size - 1))
+		{
+			_putchar('\n');
+		}
+		
 		x++;
 	}
+
+	_putchar('\n');
 }
