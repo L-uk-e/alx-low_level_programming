@@ -2,6 +2,18 @@
 #include "main.h"
 
 /**
+ * main - calls the fizz_buzz function
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+	fizz_buzz();
+
+	return (0);
+}
+
+/**
  * fizz_buzz - Prints 1 - 100. Fizz for 3 and Buzz for 5
  *
  * Return: void
@@ -35,14 +47,3 @@ void fizz_buzz(void)
 	printf("\n");
 }
 
-/**
- * main - Calls the fizz_buzz function
- *
- * Return: Always 0
- */
-int main(void)
-{
-	fizz_buzz();
-
-	return (0);
-}
