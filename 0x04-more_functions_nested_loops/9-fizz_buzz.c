@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * fizz_buzz - Prints 1 - 100. Fizz for multiples of 3 and Buzz for multiples of 5
+ * fizz_buzz - Prints 1 - 100. Fizz for 3 and Buzz for 5
  *
  * Return: void
  */
@@ -31,6 +31,8 @@ void fizz_buzz(void)
 
 		x++;
 	}
+
+	printf("\n");
 }
 
 /**
