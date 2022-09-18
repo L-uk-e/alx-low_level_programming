@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "main.h"
+
+void fizz_buzz(void);
 
 /**
  * main - calls the fizz_buzz function
