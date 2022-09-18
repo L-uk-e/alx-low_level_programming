@@ -34,16 +34,3 @@ void fizz_buzz(void)
 
 	printf("\n");
 }
-
-/**
- * main - calls the fizz-buzz function
- *
- * Return: void
- */
-int main(void)
-{
-	fizz_buzz();
-
-	return (0);
-}
-
