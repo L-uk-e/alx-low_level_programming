@@ -2,18 +2,21 @@
 
 /**
  * print_triangle - Prints a triangle made up of #
- * @size: the size of the triangle
+ * @size: size of the triangle
  *
  * Return: void
  */
 void print_triangle(int size)
 {
+	/* This variable x deals with number of lines*/
 	int x = 0;
 
 	while (x < size)
 	{
+		/* This variable z deals with number of #*/
 		int z = 0;
-		int y = (size - x);
+		/* This variable y deals with number of ' '(spaces)*/
+		int y = ((size - 1) - x);
 		
 		while (y > 0)
 		{
