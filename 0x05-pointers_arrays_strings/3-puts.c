@@ -8,14 +8,20 @@
  */
 void _puts(char *str)
 {
-	int x = 0, i = 10;
+	int x = 0, i = 10, z = 0;
 
 	while (i != 0)
 	{
 		i = str[x];
-		_putchar(str[x]);
 
 		x++;
+	}
+
+	while (z < x)
+	{
+		_putchar(str[z]);
+
+		z++;
 	}
 
 	_putchar('\n');
