@@ -17,7 +17,7 @@ void _puts(char *str)
 		x++;
 	}
 
-	while (z < x-1)
+	while (z < (x - 1))
 	{
 		_putchar(str[z]);
 
