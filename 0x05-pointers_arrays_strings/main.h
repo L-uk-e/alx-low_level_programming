@@ -17,4 +17,6 @@ void rev_string(char *s);
 
 void swap_char(char *a, char *b);
 
+void puts2(char *str);
+
 #endif
