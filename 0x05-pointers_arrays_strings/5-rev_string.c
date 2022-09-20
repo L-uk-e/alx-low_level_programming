@@ -16,7 +16,7 @@ void rev_string(char *s)
 		b++;
 	}
 
-	char d[b];
+	char d[];
 
 	while (c < b)
 	{
