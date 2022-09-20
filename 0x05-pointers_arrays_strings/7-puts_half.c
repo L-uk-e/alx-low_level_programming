@@ -10,7 +10,7 @@ void puts_half(char *str)
 {
 	int i, n, y;
 
-	i = _strlen(str) - 1;
+	i = _strlen(str);
 
 	if (i % 2 == 0)
 	{
@@ -21,7 +21,7 @@ void puts_half(char *str)
 		n = (i + 1) / 2;
 	}
 
-	y = i + 1;
+	y = i;
 
 	while (y > n)
 	{
