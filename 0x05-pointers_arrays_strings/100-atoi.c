@@ -10,8 +10,8 @@ int _atoi(char *s)
 {
 	int i = 1, x = 0;
 
-	do
-	{
+	do{
+	
 		if (*s == '-')
 		{
 			i *= -1;
@@ -24,10 +24,10 @@ int _atoi(char *s)
 		{
 			break;
 		}
-		
+
 	}
-	
+
 	while (*s++);
-	
-	return (x *i);
+
+	return (x * i);
 }
