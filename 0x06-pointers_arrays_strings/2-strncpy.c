@@ -19,17 +19,23 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	/* Case when dest is more than incoming src */
-	if (i > n)
+	if (i >= n)
 	{
-		while (x < n)
+		while ((x < n) && (*(src + x) != '\0'))
 		{
 			*(dest + x) = *(src + x);
 			x++;
 		}
 
+		while (x <= n)
+		{
+			*(dest + x) = '\0';
+			x++;
+		}
+
 	}
 
-	/* Case when dest is less than or equal to incoming src */
+	/* Case when dest is less than or equal to incoming src 
 	else
 	{
 		while ((x < n) && (*(src + x) != '\0'))
@@ -42,9 +48,11 @@ char *_strncpy(char *dest, char *src, int n)
 		{
 			*(dest + x) = '\0';
 			x++;
-		}
-	}
+			}
+       
 	
+	}
+	*/
 
 	return (dest);
 }
