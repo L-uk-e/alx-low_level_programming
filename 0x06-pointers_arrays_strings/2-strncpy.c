@@ -10,7 +10,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, x = 0, y = 0;
+	int i = 0, x = 0;
 
 	/* Get number of bytes in i */
 	while (*(dest + i) != '\0')
@@ -21,7 +21,7 @@ char *_strncpy(char *dest, char *src, int n)
 	/* Case when dest is more than incoming src */
 	if (i > n)
 	{
-		while (x < n && *(src + x) != '\0')
+		while (x < n)
 		{
 			*(dest + x) = *(src + x);
 			x++;
