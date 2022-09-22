@@ -8,10 +8,11 @@
  */
 int _atoi(char *s)
 {
-	int i = 1, x = 0;
+	int i = 1;
+	unsigned int x = 0;
 
-	do{
-	
+	do {
+
 		if (*s == '-')
 		{
 			i *= -1;
@@ -26,6 +27,7 @@ int _atoi(char *s)
 		}
 
 	}
+
 
 	while (*s++);
 
