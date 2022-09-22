@@ -23,7 +23,7 @@ char *_strncpy(char *dest, char *src, int n)
 			*(dest + x) = *(src + x);
 			x++;
 		}
-		
+
 	}
 
 	else
@@ -35,11 +35,11 @@ char *_strncpy(char *dest, char *src, int n)
 		}
 
 		while (x < i)
-		{			
+		{
 			*(dest + x) = '\0';
 			x++;
 		}
 	}
-	
+
 	return (dest);
 }
