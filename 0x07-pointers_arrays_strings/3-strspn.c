@@ -17,11 +17,11 @@ unsigned int _strspn(char *s, char *accept)
 
 		for (i = 0; *(accept + i) != '\0'; i++)
 		{
-			if ( *(accept + i) == *(s + z))
+			if (*(accept + i) == *(s + z))
 			{
 				x++;
 			}
-			
+
 		}
 
 		z++;

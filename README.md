@@ -1,1 +1,1 @@
-#Projects for the alx low level programming tasks
+# Dir for all low level programming tasks
