@@ -2,6 +2,8 @@
 
 /**
  * main - prints the name of its executable
+ * argc - number of arguments
+ * argv: arguments
  *
  * Return: Always 0
  */

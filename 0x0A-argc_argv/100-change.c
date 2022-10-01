@@ -3,6 +3,8 @@
 
 /**
  * main - prints minimum number of coins to make change
+ * argc: Number of arguments
+ * argv: Arguments
  *
  * Return: 0 if successful
  * 1 if Error
@@ -24,6 +26,7 @@ int main(int argc, char *argv[])
 	if (i < 0)
 	{
 		printf("0\n");
+		return (1);
 	}
 
 	if (i >= 25)

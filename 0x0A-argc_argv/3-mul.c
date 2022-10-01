@@ -3,6 +3,8 @@
 
 /**
  * main - Program that multiplies two numbers
+ * argc: Number of argments
+ * argv: Arguments
  *
  * Return: 0 when successful
  * 1 when arguments not present
@@ -13,7 +15,7 @@ int main(int argc, char *argv[])
 	
 	if (argc < 3)
 	{
-		printf("Error");
+		printf("Error\n");
 		
 		return (1);
 	}

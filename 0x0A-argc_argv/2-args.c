@@ -2,6 +2,8 @@
 
 /**
  * main - Prints all arguments it receives
+ * argc: Number of arguments
+ * argv: Arguments
  *
  * Return: Always 0
  */
