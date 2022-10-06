@@ -3,8 +3,8 @@
 
 /**
  * main - Adds positive numbers
- * argc: Number of arguments
- * argv: arguments
+ * @argc: Number of arguments
+ * @argv: arguments
  *
  * Return: 0 when successful
  * 1 when a wrong value is entered
@@ -25,4 +25,6 @@ int main(int argc, char *argv[])
 	}
 
 	printf("%d\n", sum);
+
+	return (0);
 }
