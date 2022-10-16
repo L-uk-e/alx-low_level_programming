@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -12,7 +11,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **p;
-	int x = 0, i;
+	int i;
 
 	if (width <= 0 || height <= 0)
 	{
