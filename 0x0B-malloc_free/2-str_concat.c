@@ -29,24 +29,22 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	while (y < w)
+	if (s1 != NULL)
 	{
-		if (*(s1 + y) == '\0')
+		while (y < w)
 		{
-			break;
+			*(p + y) = *(s1 + y);
+			y++;
 		}
-		*(p + y) = *(s1 + y);
-		y++;
 	}
 
-	while (z < x)
+	if (s2 != NULL)
 	{
-		if (*(s2 + z) == '\0')
+		while (z < x)
 		{
-			break;
+			*(p + y + z) = *(s2 + z);
+			z++;
 		}
-		*(p + y + z) = *(s2 + z);
-		z++;
 	}
 
 	*(p + y + z) = '\0';
