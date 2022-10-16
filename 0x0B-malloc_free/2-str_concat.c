@@ -31,13 +31,19 @@ char *str_concat(char *s1, char *s2)
 
 	while (y < w)
 	{
-		*(p + y) = *(s1 + y);
+		if (*(s1 + y) != '\0')
+		{
+			*(p + y) = *(s1 + y);
+		}
 		y++;
 	}
 
 	while (z < x)
 	{
-		*(p + y + z) = *(s2 + z);
+		if (*(s2 + z) != '\0')
+		{
+			*(p + y + z) = *(s2 + z);
+		}
 		z++;
 	}
 
