@@ -1,10 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
-
-#include <stdio.h>
-#include <stdarg.h>
-
-typedef unsigned int counter;
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
