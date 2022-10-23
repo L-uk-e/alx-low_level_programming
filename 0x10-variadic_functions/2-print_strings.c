@@ -6,7 +6,7 @@
  * print_strings - prints strings
  * @separator: string to be printed between the strings
  * @n: number of strings passed
- * 
+ *
  * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -25,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			word == "nil";
 		}
-		
+
 		if (i < n - 1 && separator)
 		{
 			printf("%s%s", word, (char *)separator);
@@ -37,6 +37,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 
 	va_end(ap);
-	
+
 	printf("\n");
 }
