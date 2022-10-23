@@ -24,15 +24,12 @@ void separator(char next)
  */
 void print_all(const char * const format, ...)
 {
-	int x = 0;
-	va_list ap;
-	char *word;
-	char character;
-	int number;
+	int x = 0, number;
+	char character, *word;
 	float dnumber;
 
+	va_list(ap);
 	va_start(ap, format);
-
 	while (*(format + x))
 	{
 		switch (*(format + x))
@@ -55,9 +52,7 @@ void print_all(const char * const format, ...)
 		case 's':
 			word = va_arg(ap, char *);
 			if (word == NULL)
-			{
 				word = "(nil)";
-			}
 			printf("%s", word);
 			separator(*(format + x + 1));
 			break;
@@ -65,7 +60,5 @@ void print_all(const char * const format, ...)
 		x++;
 	}
 	va_end(ap);
-
 	printf("\n");
 }
-	
