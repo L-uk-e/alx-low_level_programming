@@ -13,18 +13,26 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	count i;
+	char *word;
 
 	va_start(ap, n);
 
 	for (i = 0; i < n; i++)
 	{
+		word = va_arg(ap, char *);
+
+		if (word == NULL)
+		{
+			word == "nil";
+		}
+		
 		if (i < n - 1 && separator)
 		{
-			printf("%s%s", va_arg(ap, char *), (char *)separator);
+			printf("%s%s", word, (char *)separator);
 		}
 		else
 		{
-			printf("%s", va_arg(ap, char *));
+			printf("%s", word);
 		}
 	}
 
