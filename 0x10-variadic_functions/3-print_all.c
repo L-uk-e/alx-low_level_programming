@@ -28,9 +28,11 @@ void print_all(const char * const format, ...)
 	char character, *word;
 	float dnumber;
 
+	if (format == NULL)
+		return;
 	va_list(ap);
 	va_start(ap, format);
-	while (*(format + x))
+	while (*(format + x) != '\0')
 	{
 		switch (*(format + x))
 		{
