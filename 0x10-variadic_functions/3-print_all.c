@@ -9,41 +9,84 @@
  */
 void print_all(const char * const format, ...)
 {
+	int x = 0;
 	va_list ap;
+	char *separator = ", ";
+	char character;
+	int number;
+	float dnumber;
+	char *word;
 
 	va_start(ap, format);
 
-	int x = 0;
-
-	while (*(format + x) != '\0')
+	while (*(format + x))
 	{
-		switch (*(format + x))
+		if (*(format + x + 1))
 		{
-		case 'c':
-			printf("%c", (char)va_arg(ap, int));
-			break;
-		case 'i':
-			printf("%d", va_arg(ap, int));
-			break;
-		case 'f':
-			printf("%f", va_arg(ap, double));
-			break;
-		case 's':
-			if (va_arg(ap, char *) == NULL)
+			switch (*(format + x))
 			{
-				printf("nil");
-				
+			case 'c':
+				character = (char)va_arg(ap, int);
+				printf("%c%s", character, separator);
+				break;
+			case 'i':
+				number = va_arg(ap, int);
+				printf("%d%s", number,separator);
+				break;
+			case 'f':
+				dnumber = va_arg(ap, double);
+				printf("%f%s", dnumber, separator);
+				break;
+			case 's':
+				word = va_arg(ap, char *);
+				if (word == NULL)
+				{
+					printf("(nil)");	
+				}
+				else
+				{
+					printf("%s%s", word, separator);
+				}
+				break;
+			default:
+				break;
 			}
-			else
-			{
-				printf("%s", va_arg(ap, char *));
-			}
-			break;
-		default:
-			break;
 		}
-
+		else
+		{
+			switch (*(format + x))
+			{
+			case 'c':
+				character = (char)va_arg(ap, int);
+				printf("%c", character);
+				break;
+			case 'i':
+				number = va_arg(ap, int);
+				printf("%d", number);
+				break;
+			case 'f':
+				dnumber = va_arg(ap, double);
+				printf("%f", dnumber);
+				break;
+			case 's':
+				word = va_arg(ap, char *);
+				if (word == NULL)
+				{
+					printf("(nil)");	
+				}
+				else
+				{
+					printf("%s", word);
+				}
+				break;
+			default:
+				break;
+			}
+		}
 		x++;
 	}
+	va_end(ap);
+
 	printf("\n");
 }
+	
