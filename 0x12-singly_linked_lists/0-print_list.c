@@ -33,11 +33,6 @@ size_t print_list(const list_t *h)
 			}
 		}
 
-		if (x == 0)
-		{
-			word = "(nil)";
-		}
-
 		printf("[%d] %s\n", x, word);
 
 		temp = temp->next;
