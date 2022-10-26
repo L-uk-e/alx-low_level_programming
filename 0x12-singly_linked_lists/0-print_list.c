@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	int x;
 	size_t y = 0;
 	char *word;
-	const list_t* temp = (list_t*)malloc(sizeof(list_t));
+	const list_t *temp = (list_t *)malloc(sizeof(list_t));
 
 	temp = h;
 	while (temp != NULL)
@@ -32,7 +32,7 @@ size_t print_list(const list_t *h)
 				x++;
 			}
 		}
-		
+
 		if (x == 0)
 		{
 			word = "(nil)";
