@@ -18,11 +18,9 @@ int main(void)
 		next = x + y;
 		x = y;
 		y = next;
-		count ++;
+		count++;
 	}
 	printf("\n");
 
 	return (0);
 }
-
-	
