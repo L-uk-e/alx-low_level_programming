@@ -15,6 +15,11 @@ int print_last_digit(int n)
 		n = -n;
 	}
 
+	if (n == INT_MIN)
+	{
+		n = 8;
+	}
+
 	x = n % 10;
 
 	_putchar(x + '0');
