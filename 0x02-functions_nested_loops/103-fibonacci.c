@@ -13,7 +13,7 @@ int main(void)
 	{
 		if ((x + y) % 2 == 0)
 		{
-			sum += x;
+			sum += (x + y);
 		}
 		next = x + y;
 		x = y;
