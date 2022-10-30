@@ -7,13 +7,13 @@
  */
 int main(void)
 {
-	int w, x = 2, y = 3, z;
+	long int w, x = 2, y = 3, z;
 
 	printf("1, 2");
 
 	for (w = 0; w < 50; w++)
 	{
-		printf(", %d", y);
+		printf(", %ld", y);
 		z = y;
 		y = y + x;
 		x = z;
