@@ -17,11 +17,8 @@ void print_times_table(int n)
 			for (y = 0; y <= n; y++)
 			{
 				z = x * y;
-
 				if (y == 0)
-				{
 					_putchar(z + '0');
-				}
 				else if (z < 10)
 				{
 					_putchar(',');
