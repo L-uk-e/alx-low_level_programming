@@ -1,7 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
-#include "7-print_last_digit.c"
-
 
 /**
  * main - check the code
@@ -12,7 +9,7 @@ int main(void)
 {
     int r;
 
-    r = print_last_digit(-99.8);
+    r = print_last_digit(INT_MIN);
     _putchar('0' + r);
     _putchar('\n');
     return (0);
