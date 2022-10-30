@@ -11,7 +11,7 @@ int main(void)
 
 	printf("1, 2");
 
-	for (w = 0; w < 50; w++)
+	for (w = 0; w < 48; w++)
 	{
 		printf(", %ld", y);
 		z = y;
