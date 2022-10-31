@@ -7,14 +7,14 @@
  */
 int main(void)
 {
-	unsigned long int x = 1, y = 2, next;
+	unsigned long long int x = 1, y = 2, next;
 	int count = 0;
 
-	printf("%ld", x);
+	printf("%llu", x);
 
 	while (count < 97)
 	{
-		printf(", %lu", y);
+		printf(", %llu", y);
 		next = x + y;
 		x = y;
 		y = next;

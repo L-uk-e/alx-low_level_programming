@@ -4,7 +4,7 @@
  * power - finds the value of 2 power number
  * @p: power
  *
- * return: The result
+ * Return: The result of 2 power p
  */
 int power(int p)
 {
