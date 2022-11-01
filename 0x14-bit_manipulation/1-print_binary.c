@@ -26,9 +26,10 @@ int power(int p)
  */
 void print_binary(unsigned long int n)
 {
-	int x = 0, y = n;
+	unsigned long int y = n;
+	int x = 0;
 
-	if (n == 0)
+	if (y == 0)
 	{
 		_putchar('0');
 	}
@@ -38,7 +39,7 @@ void print_binary(unsigned long int n)
 		x++;
 	}
 
-	x--;
+	x -= 1;
 
 	while (x >= 0)
 	{
