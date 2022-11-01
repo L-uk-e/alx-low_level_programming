@@ -26,8 +26,7 @@ int power(int p)
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int y = n;
-	int x = 0;
+	int y = n, x = 0;
 
 	if (y == 0)
 	{
